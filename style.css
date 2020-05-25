@@ -1,0 +1,269 @@
+/*Mainbody background styling*/
+body {
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.bodybg {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left {
+	background-color: pink;
+}
+
+.right {
+	background-color: #f6f6f6;
+}
+
+/*Website container styling */
+.container {
+	position: absolute;
+	z-index: 2;
+	width: 850px;
+	height: 450px;
+	background-color: #FFFFFF;
+	left: 50%;
+	margin-left: -425px;
+	top: 50%;
+	margin-top: -225px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+.hexagon {
+	position: absolute;
+	z-index: 3;
+	width: 400px;
+	opacity: 0.02;
+	object-position: -90px -90px;
+}
+
+.theshoe {
+	position: absolute;
+	z-index: 4;
+	width: 320px;
+	top: 50%;
+	left: 50%;
+	margin-top: -97px;
+	margin-left: -190px;
+	transform: rotate(-30deg);
+}
+
+.otherstuff {
+	position: absolute;
+	z-index: 5;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 20px;
+}
+
+.thenavigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.thelogo {
+	width: 50px;
+	object-position: 0px 0px;
+	margin-left: 40px;
+
+}
+
+.logoandtext {
+	display: flex;
+	align-content: center;
+	text-decoration: none;
+}
+
+.logotext {
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #131313;
+}
+
+.nodeco {
+	text-decoration: none;
+}
+
+.menu {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+
+.menuitem {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-size: 11px;
+	color: #131313;
+	font-weight: bold;
+}
+
+.menuitem:hover, .menuitem:active {
+	color: #F581C2;
+}
+
+.contentcontainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contentleft {
+	margin-left: 40px;
+	padding-top: 90px;
+}
+
+.headline {
+	display: inline-block;
+	font-family: 'Biryani', sans-serif;
+	font-weight: black;
+	font-size: 30px;
+	color: #131313;
+	margin: 0px;
+}
+
+.contentleft > span {
+	font-family: 'Lato', sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.description {
+	max-width: 190px;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	color: #131313;
+	margin-top: 0px;
+}
+
+.buynow {
+	margin-top: 30px;
+	height: 40px;
+	width: 120px;
+	border: none;
+	background-image: linear-gradient(to right,#D14488,#F581C2);
+	font-family: 'Biryani', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+}
+
+.rangeslide {
+	-webkit-appearance: none;
+	width: 200px;
+	height: 10px;
+	outline: none;
+	background: linear-gradient(90deg, #C6C6C6, #C6C6C6 60%, #C6C6C6 60%);
+	position: absolute;
+	z-index: 7;
+	margin: 0px;
+	border-radius: 5px;
+}
+
+.rangeslide::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #D14488;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 2px 1px #FFFFFF;
+	border: 1px solid #D14488;
+}
+
+.sliderbox {
+	width: 220px;
+	height: 15px;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.contentright {
+	padding-top: 230px;
+	padding-left: 120px;
+}
+
+.tobottom > span {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+.measures {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	width: 190px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.division {
+	height: 10px;
+	border-left: 1px solid #131313;
+	opacity: 0.2;
+}
+
+.last {
+	border-right: 1px solid #131313;
+	opacity: 0.2;
+}
+
+.sizes {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 100px;
+	margin-left: 40px;
+}
+
+.socials {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 2px solid #D14488;
+	padding: 3px;
+}
+
+.socials > img {
+	width: 15px;
+	height: 15px;
+}
+
+.progressbar {
+	width: 200px;
+	height: 10px;
+	background-color: blue;
+	z-index: 11;
+}
